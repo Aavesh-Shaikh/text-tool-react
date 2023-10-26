@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins";
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(https://img.freepik.com/free-photo/top-view-alphabet-letters-frame_23-2148718188.jpg?w=1380&t=st=1697474909~exp=1697475509~hmac=23a2763696f17f60a5c9073b04fc478e20bd3111b0a9fd5ca4a29da97c4ae66b); */
+  display: flex;
+  background: linear-gradient(rgba(25, 150, 71, 0.1), black);
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-container {
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-weight: 500;
+  padding: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+#textinput {
+  margin: 5px;
+  padding: 35px;
+  font-size: 2rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.btn {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+.btn:active {
+  background-color: rgba(25, 150, 71, 1);
+  color: #fff;
+}
+@media (min-width: 620px) {
+  .main-container {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    height: calc(100vh - 40px);
+    display: flex;
+    background-size: contain;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+  }
+
+  h1 {
+    padding: 5px;
+  }
+
+  #textinput {
+    margin: 5px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+  }
+}
